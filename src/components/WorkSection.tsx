@@ -11,7 +11,11 @@ export interface ProjectItem {
   category: string;
   frameNumber: string;
   image: string;
-  videoUrl: string;
+  driveId: string;
+  driveUrl: string;
+  driveEmbedUrl: string;
+  isVertical?: boolean;
+  videoUrl?: string;
   duration: string;
   description: string;
   software: string[];
@@ -40,8 +44,11 @@ export default function WorkSection({ onModalOpenChange }: WorkSectionProps = {}
       title: "Alive Clinic Commercial",
       category: "Brand & Healthcare Reel",
       frameNumber: "01A",
-      image: "/images/frame_walker.jpg",
-      videoUrl: "/portfolio/Alive%20Clinic%20(1).mp4",
+      image: "https://drive.google.com/thumbnail?id=1P3DJXC2nay0BF8cT8W0rCrIltclDfg8G&sz=w1000",
+      driveId: "1P3DJXC2nay0BF8cT8W0rCrIltclDfg8G",
+      driveUrl: "https://drive.google.com/file/d/1P3DJXC2nay0BF8cT8W0rCrIltclDfg8G/view?usp=drivesdk",
+      driveEmbedUrl: "https://drive.google.com/file/d/1P3DJXC2nay0BF8cT8W0rCrIltclDfg8G/preview",
+      isVertical: true,
       duration: "00:45",
       description:
         "Dynamic commercial edit for Alive Clinic featuring clean pacing, sleek subtitle motion graphics, clinical color grading, and ambient sound design.",
@@ -52,8 +59,11 @@ export default function WorkSection({ onModalOpenChange }: WorkSectionProps = {}
       title: "DISCO Motion Reel",
       category: "Music & Nightlife Promo",
       frameNumber: "02A",
-      image: "/images/frame_car.jpg",
-      videoUrl: "/portfolio/DISCO.mp4",
+      image: "https://drive.google.com/thumbnail?id=1Q4F66KmR6eMMuPKBz70okPKVCozAW9eu&sz=w1000",
+      driveId: "1Q4F66KmR6eMMuPKBz70okPKVCozAW9eu",
+      driveUrl: "https://drive.google.com/file/d/1Q4F66KmR6eMMuPKBz70okPKVCozAW9eu/view?usp=drivesdk",
+      driveEmbedUrl: "https://drive.google.com/file/d/1Q4F66KmR6eMMuPKBz70okPKVCozAW9eu/preview",
+      isVertical: false,
       duration: "00:30",
       description:
         "High-energy rhythmic cutting synced to dynamic disco beats, neon glow color grading, speed ramping, and stylized glitch transitions.",
@@ -64,8 +74,11 @@ export default function WorkSection({ onModalOpenChange }: WorkSectionProps = {}
       title: "Podcast Highlights Reel",
       category: "Short-form & Socials",
       frameNumber: "03A",
-      image: "/images/frame_limits.jpg",
-      videoUrl: "/portfolio/Podcast%20clip%20(1).mp4",
+      image: "https://drive.google.com/thumbnail?id=1if6wKjfYn00uBPwKrwV20V0CCynN0qYy&sz=w1000",
+      driveId: "1if6wKjfYn00uBPwKrwV20V0CCynN0qYy",
+      driveUrl: "https://drive.google.com/file/d/1if6wKjfYn00uBPwKrwV20V0CCynN0qYy/view?usp=drivesdk",
+      driveEmbedUrl: "https://drive.google.com/file/d/1if6wKjfYn00uBPwKrwV20V0CCynN0qYy/preview",
+      isVertical: true,
       duration: "01:00",
       description:
         "Engaging short-form podcast edit with animated captions, dynamic camera reframing, sound effects, B-roll overlays, and crisp audio enhancement.",
@@ -76,8 +89,11 @@ export default function WorkSection({ onModalOpenChange }: WorkSectionProps = {}
       title: "Rap Battle Cypher",
       category: "Event & Music Video",
       frameNumber: "04A",
-      image: "/images/frame_astronaut.jpg",
-      videoUrl: "/portfolio/Rap%20Battle.mp4",
+      image: "https://drive.google.com/thumbnail?id=1vlnI-3o5WiFeLNdF_Zxn8oDSUSSnqfXh&sz=w1000",
+      driveId: "1vlnI-3o5WiFeLNdF_Zxn8oDSUSSnqfXh",
+      driveUrl: "https://drive.google.com/file/d/1vlnI-3o5WiFeLNdF_Zxn8oDSUSSnqfXh/view?usp=drivesdk",
+      driveEmbedUrl: "https://drive.google.com/file/d/1vlnI-3o5WiFeLNdF_Zxn8oDSUSSnqfXh/preview",
+      isVertical: false,
       duration: "00:50",
       description:
         "Intense, rhythm-matched rap battle edit with fast cuts, camera whip transitions, bass drops, and crowd energy sound mix.",
@@ -88,8 +104,11 @@ export default function WorkSection({ onModalOpenChange }: WorkSectionProps = {}
       title: "Treat Studio Showcase",
       category: "Studio & Brand Promo",
       frameNumber: "05A",
-      image: "/images/frame_walker.jpg",
-      videoUrl: "/portfolio/treat%20studio%20edit.mp4",
+      image: "https://drive.google.com/thumbnail?id=1ZA6bh79wOBFksKmygfo9Dd01Bnn3FxA5&sz=w1000",
+      driveId: "1ZA6bh79wOBFksKmygfo9Dd01Bnn3FxA5",
+      driveUrl: "https://drive.google.com/file/d/1ZA6bh79wOBFksKmygfo9Dd01Bnn3FxA5/view?usp=drivesdk",
+      driveEmbedUrl: "https://drive.google.com/file/d/1ZA6bh79wOBFksKmygfo9Dd01Bnn3FxA5/preview",
+      isVertical: true,
       duration: "00:35",
       description:
         "Creative studio commercial with slick pacing, modern typography, aesthetic color grading, and custom transition sound design.",
@@ -100,8 +119,11 @@ export default function WorkSection({ onModalOpenChange }: WorkSectionProps = {}
       title: "Woksmith Culinary Story",
       category: "Food & Restaurant Reel",
       frameNumber: "06A",
-      image: "/images/frame_car.jpg",
-      videoUrl: "/portfolio/woksmith.mp4",
+      image: "https://drive.google.com/thumbnail?id=14np_auxASma5o18QbixCvQZ94BJNzBQA&sz=w1000",
+      driveId: "14np_auxASma5o18QbixCvQZ94BJNzBQA",
+      driveUrl: "https://drive.google.com/file/d/14np_auxASma5o18QbixCvQZ94BJNzBQA/view?usp=drivesdk",
+      driveEmbedUrl: "https://drive.google.com/file/d/14np_auxASma5o18QbixCvQZ94BJNzBQA/preview",
+      isVertical: true,
       duration: "00:40",
       description:
         "Mouth-watering culinary reel featuring sizzling pan sound design, macro shot color grade, speed ramps, and appetite-inducing pacing.",
@@ -181,26 +203,38 @@ export default function WorkSection({ onModalOpenChange }: WorkSectionProps = {}
 
                   {/* Main Video Frame Preview: Optimized Video */}
                   <div className="relative aspect-video w-full rounded-lg overflow-hidden bg-slate-950 border border-white/10 group-hover:border-indigo-400/40 transition-colors">
-                    {/* Background Preview Video (Optimized with preload="none" and poster fallback) */}
-                    <video
-                      src={selectedIndex === null ? project.videoUrl : undefined}
-                      poster={project.image}
-                      autoPlay
-                      loop
-                      muted
-                      playsInline
-                      preload="none"
-                      className="w-full h-full object-cover brightness-95 group-hover:scale-105 group-hover:brightness-110 transition-all duration-500"
-                    />
+                    {/* Background Preview Video (Google Drive preview iframe or fallback) */}
+                    {project.driveEmbedUrl ? (
+                      <div className="w-full h-full relative overflow-hidden pointer-events-none">
+                        <iframe
+                          src={project.driveEmbedUrl}
+                          title={project.title}
+                          allow="autoplay; encrypted-media; picture-in-picture"
+                          className="absolute inset-0 w-[140%] h-[140%] -left-[20%] -top-[20%] object-cover pointer-events-none brightness-95 group-hover:scale-105 group-hover:brightness-110 transition-all duration-500 border-0"
+                          loading="lazy"
+                        />
+                      </div>
+                    ) : (
+                      <video
+                        src={selectedIndex === null ? project.videoUrl : undefined}
+                        poster={project.image}
+                        autoPlay
+                        loop
+                        muted
+                        playsInline
+                        preload="none"
+                        className="w-full h-full object-cover brightness-95 group-hover:scale-105 group-hover:brightness-110 transition-all duration-500"
+                      />
+                    )}
 
                     {/* Live Stream / Muted Status Pill */}
-                    <div className="absolute top-2 left-2 flex items-center space-x-1.5 px-2 py-0.5 rounded-full bg-black/65 backdrop-blur-md border border-white/15 text-[9px] font-mono text-slate-200">
+                    <div className="absolute top-2 left-2 flex items-center space-x-1.5 px-2 py-0.5 rounded-full bg-black/65 backdrop-blur-md border border-white/15 text-[9px] font-mono text-slate-200 pointer-events-none">
                       <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" />
-                      <span>HD REEL</span>
+                      <span>{project.isVertical ? "9:16 REEL" : "HD REEL"}</span>
                     </div>
 
                     {/* Sound Indicator Overlay on Hover */}
-                    <div className="absolute inset-0 bg-slate-950/20 group-hover:bg-slate-950/40 transition-colors flex items-center justify-center">
+                    <div className="absolute inset-0 bg-slate-950/20 group-hover:bg-slate-950/40 transition-colors flex items-center justify-center pointer-events-none">
                       <div className="w-13 h-13 rounded-full bg-indigo-600/90 backdrop-blur-md border border-white/40 flex items-center justify-center text-white shadow-2xl group-hover:scale-110 group-hover:bg-indigo-500 transition-all duration-300">
                         <Play className="w-6 h-6 ml-0.5 fill-white text-white" />
                       </div>
