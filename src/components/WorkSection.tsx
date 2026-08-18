@@ -11,9 +11,10 @@ export interface ProjectItem {
   category: string;
   frameNumber: string;
   image: string;
-  driveId: string;
-  driveUrl: string;
-  driveEmbedUrl: string;
+  youtubeId: string;
+  youtubeUrl: string;
+  driveId?: string;
+  driveUrl?: string;
   isVertical?: boolean;
   videoUrl?: string;
   duration: string;
@@ -44,10 +45,11 @@ export default function WorkSection({ onModalOpenChange }: WorkSectionProps = {}
       title: "Alive Clinic Commercial",
       category: "Brand & Healthcare Reel",
       frameNumber: "01A",
-      image: "https://drive.google.com/thumbnail?id=1P3DJXC2nay0BF8cT8W0rCrIltclDfg8G&sz=w1000",
+      image: "https://img.youtube.com/vi/M66cOmhenRc/hqdefault.jpg",
+      youtubeId: "M66cOmhenRc",
+      youtubeUrl: "https://youtube.com/shorts/M66cOmhenRc",
       driveId: "1P3DJXC2nay0BF8cT8W0rCrIltclDfg8G",
       driveUrl: "https://drive.google.com/file/d/1P3DJXC2nay0BF8cT8W0rCrIltclDfg8G/view?usp=drivesdk",
-      driveEmbedUrl: "https://drive.google.com/file/d/1P3DJXC2nay0BF8cT8W0rCrIltclDfg8G/preview",
       isVertical: true,
       duration: "00:45",
       description:
@@ -59,10 +61,11 @@ export default function WorkSection({ onModalOpenChange }: WorkSectionProps = {}
       title: "DISCO Motion Reel",
       category: "Music & Nightlife Promo",
       frameNumber: "02A",
-      image: "https://drive.google.com/thumbnail?id=1Q4F66KmR6eMMuPKBz70okPKVCozAW9eu&sz=w1000",
+      image: "https://img.youtube.com/vi/8pWRSUOEZg4/maxresdefault.jpg",
+      youtubeId: "8pWRSUOEZg4",
+      youtubeUrl: "https://youtu.be/8pWRSUOEZg4",
       driveId: "1Q4F66KmR6eMMuPKBz70okPKVCozAW9eu",
       driveUrl: "https://drive.google.com/file/d/1Q4F66KmR6eMMuPKBz70okPKVCozAW9eu/view?usp=drivesdk",
-      driveEmbedUrl: "https://drive.google.com/file/d/1Q4F66KmR6eMMuPKBz70okPKVCozAW9eu/preview",
       isVertical: false,
       duration: "00:30",
       description:
@@ -74,10 +77,11 @@ export default function WorkSection({ onModalOpenChange }: WorkSectionProps = {}
       title: "Podcast Highlights Reel",
       category: "Short-form & Socials",
       frameNumber: "03A",
-      image: "https://drive.google.com/thumbnail?id=1if6wKjfYn00uBPwKrwV20V0CCynN0qYy&sz=w1000",
+      image: "https://img.youtube.com/vi/f-bhoqRwW4U/hqdefault.jpg",
+      youtubeId: "f-bhoqRwW4U",
+      youtubeUrl: "https://youtube.com/shorts/f-bhoqRwW4U",
       driveId: "1if6wKjfYn00uBPwKrwV20V0CCynN0qYy",
       driveUrl: "https://drive.google.com/file/d/1if6wKjfYn00uBPwKrwV20V0CCynN0qYy/view?usp=drivesdk",
-      driveEmbedUrl: "https://drive.google.com/file/d/1if6wKjfYn00uBPwKrwV20V0CCynN0qYy/preview",
       isVertical: true,
       duration: "01:00",
       description:
@@ -89,10 +93,11 @@ export default function WorkSection({ onModalOpenChange }: WorkSectionProps = {}
       title: "Rap Battle Cypher",
       category: "Event & Music Video",
       frameNumber: "04A",
-      image: "https://drive.google.com/thumbnail?id=1vlnI-3o5WiFeLNdF_Zxn8oDSUSSnqfXh&sz=w1000",
+      image: "https://img.youtube.com/vi/d8siOXnehCs/maxresdefault.jpg",
+      youtubeId: "d8siOXnehCs",
+      youtubeUrl: "https://youtu.be/d8siOXnehCs",
       driveId: "1vlnI-3o5WiFeLNdF_Zxn8oDSUSSnqfXh",
       driveUrl: "https://drive.google.com/file/d/1vlnI-3o5WiFeLNdF_Zxn8oDSUSSnqfXh/view?usp=drivesdk",
-      driveEmbedUrl: "https://drive.google.com/file/d/1vlnI-3o5WiFeLNdF_Zxn8oDSUSSnqfXh/preview",
       isVertical: false,
       duration: "00:50",
       description:
@@ -104,10 +109,11 @@ export default function WorkSection({ onModalOpenChange }: WorkSectionProps = {}
       title: "Treat Studio Showcase",
       category: "Studio & Brand Promo",
       frameNumber: "05A",
-      image: "https://drive.google.com/thumbnail?id=1ZA6bh79wOBFksKmygfo9Dd01Bnn3FxA5&sz=w1000",
+      image: "https://img.youtube.com/vi/7oIlQbzqFfw/hqdefault.jpg",
+      youtubeId: "7oIlQbzqFfw",
+      youtubeUrl: "https://youtube.com/shorts/7oIlQbzqFfw",
       driveId: "1ZA6bh79wOBFksKmygfo9Dd01Bnn3FxA5",
       driveUrl: "https://drive.google.com/file/d/1ZA6bh79wOBFksKmygfo9Dd01Bnn3FxA5/view?usp=drivesdk",
-      driveEmbedUrl: "https://drive.google.com/file/d/1ZA6bh79wOBFksKmygfo9Dd01Bnn3FxA5/preview",
       isVertical: true,
       duration: "00:35",
       description:
@@ -119,10 +125,11 @@ export default function WorkSection({ onModalOpenChange }: WorkSectionProps = {}
       title: "Woksmith Culinary Story",
       category: "Food & Restaurant Reel",
       frameNumber: "06A",
-      image: "https://drive.google.com/thumbnail?id=14np_auxASma5o18QbixCvQZ94BJNzBQA&sz=w1000",
+      image: "https://img.youtube.com/vi/izua7BqV1t0/hqdefault.jpg",
+      youtubeId: "izua7BqV1t0",
+      youtubeUrl: "https://youtube.com/shorts/izua7BqV1t0",
       driveId: "14np_auxASma5o18QbixCvQZ94BJNzBQA",
       driveUrl: "https://drive.google.com/file/d/14np_auxASma5o18QbixCvQZ94BJNzBQA/view?usp=drivesdk",
-      driveEmbedUrl: "https://drive.google.com/file/d/14np_auxASma5o18QbixCvQZ94BJNzBQA/preview",
       isVertical: true,
       duration: "00:40",
       description:
@@ -203,14 +210,14 @@ export default function WorkSection({ onModalOpenChange }: WorkSectionProps = {}
 
                   {/* Main Video Frame Preview: Optimized Video */}
                   <div className="relative aspect-video w-full rounded-lg overflow-hidden bg-slate-950 border border-white/10 group-hover:border-indigo-400/40 transition-colors">
-                    {/* Background Preview Video (Google Drive preview iframe or fallback) */}
-                    {project.driveEmbedUrl ? (
+                    {/* Background Preview Video (YouTube silent continuous auto-loop iframe) */}
+                    {project.youtubeId ? (
                       <div className="w-full h-full relative overflow-hidden pointer-events-none">
                         <iframe
-                          src={project.driveEmbedUrl}
+                          src={`https://www.youtube-nocookie.com/embed/${project.youtubeId}?autoplay=1&mute=1&loop=1&playlist=${project.youtubeId}&controls=0&showinfo=0&rel=0&modestbranding=1&playsinline=1&iv_load_policy=3&disablekb=1&fs=0`}
                           title={project.title}
-                          allow="autoplay; encrypted-media; picture-in-picture"
-                          className="absolute inset-0 w-[140%] h-[140%] -left-[20%] -top-[20%] object-cover pointer-events-none brightness-95 group-hover:scale-105 group-hover:brightness-110 transition-all duration-500 border-0"
+                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                          className="absolute inset-0 w-[135%] h-[135%] -left-[17.5%] -top-[17.5%] object-cover pointer-events-none brightness-95 group-hover:scale-105 group-hover:brightness-110 transition-all duration-500 border-0"
                           loading="lazy"
                         />
                       </div>

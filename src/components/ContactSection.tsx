@@ -32,8 +32,14 @@ export default function ContactSection() {
       value: "+91 7620443842",
       href: "https://wa.me/917620443842",
       icon: (
-        <div className="w-12 h-12 rounded-2xl bg-gradient-to-tr from-emerald-500 to-green-600 flex items-center justify-center text-white shadow-md">
-          <MessageCircle className="w-6 h-6" />
+        <div className="w-12 h-12 rounded-2xl overflow-hidden shadow-md flex items-center justify-center">
+          <Image
+            src="/images/whatsapp.svg"
+            alt="WhatsApp"
+            width={48}
+            height={48}
+            className="w-full h-full object-cover"
+          />
         </div>
       ),
       actionText: "Chat on WhatsApp",
