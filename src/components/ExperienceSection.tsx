@@ -25,6 +25,13 @@ export default function ExperienceSection() {
       description:
         "Edited College Events Reels.",
     },
+    {
+      year: "OCT 2026 - Present",
+      agency: "Robotex India",
+      role: "Video Editor & Post Production Specialist",
+      description:
+        "Working as Video Editor & Post Production Specialist in Robotex India from OCT 2026 to Present.",
+    },
 
   ];
 
